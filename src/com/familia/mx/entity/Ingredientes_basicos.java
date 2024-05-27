@@ -4,7 +4,7 @@ package com.familia.mx.entity;
  *
  * @author luis_
  */
-public class Ingredientes {
+public class Ingredientes_basicos {
      //declarar las variables y columnas de la tabla
     private int id_ingredientes;
     private int id_clasificacion_ingredientes;
@@ -12,10 +12,10 @@ public class Ingredientes {
     private String unidad_de_medida;
     private String cantidad;
 
-    public Ingredientes() {
+    public Ingredientes_basicos() {
     }
 
-    public Ingredientes(int id_ingredientes, int id_clasificacion_ingredientes, String nombre, String unidad_de_medida, String cantidad) {
+    public Ingredientes_basicos(int id_ingredientes, int id_clasificacion_ingredientes, String nombre, String unidad_de_medida, String cantidad) {
         this.id_ingredientes = id_ingredientes;
         this.id_clasificacion_ingredientes = id_clasificacion_ingredientes;
         this.nombre = nombre;

@@ -3,6 +3,7 @@ package com.familia.mx.dao;
 import com.familia.mx.entity.Recetas;
 import java.sql.*;
 import javax.swing.JTable;
+import java.util.concurrent;
 
 /**
  *
@@ -12,7 +13,7 @@ public class RecetarioDAO {
     
     private String mensaje = "";
 
-public String agregarReceta(Connection conneccion, Recetas receta ){
+public String agregarReceta( Connection conneccion, Recetas receta ){
     PreparedStatement pst = null;
     String sql = "INSERT INTO Recetas (id_comentario, id_clasificacion, nombre_receta, descripcion_receta, \n" +
 "tiempo_en_cocina, tiempo_coccion, utensilios, procedimiento_recetas, notas) VALUES(?,?,?,?,?,?,?,?,?); ";
